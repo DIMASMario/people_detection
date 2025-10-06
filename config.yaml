@@ -1,0 +1,42 @@
+# Konfigurasi sistem penghitung pengunjung
+
+# Konfigurasi kamera
+camera:
+  source: 0  # 0 untuk webcam
+  width: 640
+  height: 480
+  fps: 15
+
+# Konfigurasi deteksi
+detection:
+  model_size: "n"
+  conf_threshold: 0.4
+  iou_threshold: 0.45
+  classes: [0]  # 0 adalah 'person' pada COCO dataset
+  device: "cpu"
+
+# Konfigurasi tracking
+tracking:
+  max_disappeared: 20
+  max_distance: 60
+  exit_timeout: 5
+
+# Konfigurasi counting line (garis penghitungan vertikal) - Diubah ke "left" saja
+counting_line:
+  enabled: true
+  position: 0.5  # posisi garis relatif terhadap lebar frame (0-1)
+  direction: "left"  # HANYA kanan ke kiri
+
+# Konfigurasi export
+export:
+  enabled: true
+  excel_path: "hasil_deteksi_pengunjung.xlsx"
+  auto_save_interval: 120  # Auto save setiap 2 menit
+
+# Konfigurasi API
+api:
+  enabled: false
+
+# Konfigurasi re-identification
+reid:
+  enabled: false

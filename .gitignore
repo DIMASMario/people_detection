@@ -1,0 +1,16 @@
+# Buat file .gitignore
+echo "# Files to ignore
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.env
+env/
+venv/
+ENV/
+*.log
+*.db
+*.pt
+hasil_deteksi_pengunjung*.xlsx
+" > .gitignore

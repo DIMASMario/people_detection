@@ -1,0 +1,26 @@
+# Dependencies utama
+torch>=1.7.0
+torchvision>=0.8.1
+numpy>=1.18.5
+opencv-python>=4.1.2
+pandas>=1.1.4
+openpyxl>=3.0.7
+scipy>=1.4.1
+pyyaml>=5.3.1
+Pillow>=8.0.0  # Untuk pengolahan gambar dalam ReID
+
+# Dependencies API & database
+fastapi>=0.68.0
+uvicorn>=0.15.0
+python-dotenv>=0.19.0
+sqlalchemy>=1.4.23
+aiofiles>=0.7.0
+python-multipart>=0.0.5
+
+# Dependencies visualisasi dan utils
+matplotlib>=3.2.2
+seaborn>=0.11.0
+tqdm>=4.41.0  # Progress bar
+
+# YOLOv5 detection (optional jika menggunakan dari yolov5 folder)
+# ultralytics>=8.0.0
